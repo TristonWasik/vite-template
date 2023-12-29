@@ -1,8 +1,8 @@
 export default {
   providers: [
     {
-      domain: "https://arriving-moth-98.clerk.accounts.dev",
-      applicationID: "convex",
+      domain: process.env.CLERK_AUTH_DOMAIN,
+      applicationID: process.env.CLERK_AUTH_APPID,
     },
   ],
 };
